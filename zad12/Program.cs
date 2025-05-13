@@ -4,35 +4,39 @@
     {
         static void Main(string[] args)
         {
-            // create a stack of chars and read the coded word
+            // създаване на стек от символи и четене на кодираната дума
             List<char> codedWord = Console.ReadLine().ToCharArray().ToList();
             Stack<char> decodedWord = new Stack<char>();
-            // count the number of forward remove characters
+
+            // брояч за напредналото премахване на символи
             int forwardRemoveCount = 0;
-            // read the coded word and decode it
+
+            // четене на кодираната дума и декодирането ѝ
             for (int i = 0; i < codedWord.Count; i++)
             {
-                // if the character is a '<' remove the last character from the stack
+                // ако символът е '<', премахни последния символ от стека
                 if (codedWord[i] == '<')
                 {
                     decodedWord.Pop();
                 }
-                // if the character is a '>' add the last character to the stack
-                else if(codedWord[i] == '>')
+                // ако символът е '>', увеличаване на броя: символи за премахване отпред 
+                else if (codedWord[i] == '>')
                 {
                     forwardRemoveCount++;
                 }
-                else if(forwardRemoveCount > 0)
+                // премахване на символи при необходимост
+                else if (forwardRemoveCount > 0)
                 {
                     forwardRemoveCount--;
                 }
-                // in all other cases push the character to the stack
+                // във всички останали случаи добави символа в стека
                 else
                 {
                     decodedWord.Push(codedWord[i]);
                 }
             }
-            // print the decoded word
+
+            // отпечатване на декодираната дума
             do
             {
                 Console.Write(decodedWord.Pop());

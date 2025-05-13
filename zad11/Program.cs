@@ -4,25 +4,27 @@
     {
         static void Main(string[] args)
         {
-            // create a stack of chars
+            // създаване на стек от символи
             char[] codedWord = Console.ReadLine().ToCharArray();
             Stack<char> decodedWord = new Stack<char>();
-            // read the coded word and decode it
+
+            // четене на кодираната дума и декодирането ѝ
             for (int i = 0; i < codedWord.Length; i++)
             {
-                // if the character is a "'" remove the last 2 characters from the stack
+                // ако символът е "'", премахни последните два символа от стека
                 if (codedWord[i] == '\'')
                 {
                     decodedWord.Pop();
                     decodedWord.Pop();
                 }
-                // in all other cases push the character to the stack
+                // във всички останали случаи добави символа в стека
                 else
                 {
                     decodedWord.Push(codedWord[i]);
                 }
             }
-            // print the decoded word
+
+            // отпечатване на декодираната дума
             do
             {
                 Console.Write(decodedWord.Pop());

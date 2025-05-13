@@ -4,22 +4,25 @@
     {
         static void Main(string[] args)
         {
-            // create a stack of integers
+            // създаване на стек от цели числа
             Stack<int> input = new Stack<int>(Console.ReadLine()
-                .Split(new char[] {' '},StringSplitOptions.RemoveEmptyEntries)
+                .Split(new char[] { ' ' }, StringSplitOptions.RemoveEmptyEntries)
                 .Select(int.Parse));
-            // checker for repeated elements
+
+            // проверка за повтарящи се елементи
             bool hasRepeated = false;
-            // check if the stack has 2 repeated elements in a row
+
+            // проверка дали стекът има два повтарящи се елемента един след друг
             for (int i = 1; i < input.Count;)
             {
-                if (input.Pop()==input.Peek())
+                if (input.Pop() == input.Peek())
                 {
                     hasRepeated = true;
                     break;
                 }
             }
-            // prints a respective message
+
+            // отпечатване на съответното съобщение
             string message = hasRepeated ? "YES" : "NO";
             Console.WriteLine(message);
         }
