@@ -1,0 +1,34 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.12.35707.178 d17.12
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "zad9", "StacksSchoolExer\zad9.csproj", "{03D4E3A3-2D70-4E3F-82CB-1F89D5585001}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "zad11", "zad11\zad11.csproj", "{5169DA02-1983-41ED-8A15-CB0D97462043}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "zad12", "zad12\zad12.csproj", "{5290457E-79F9-4C96-A2F3-849533ADDFA5}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{03D4E3A3-2D70-4E3F-82CB-1F89D5585001}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{03D4E3A3-2D70-4E3F-82CB-1F89D5585001}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{03D4E3A3-2D70-4E3F-82CB-1F89D5585001}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{03D4E3A3-2D70-4E3F-82CB-1F89D5585001}.Release|Any CPU.Build.0 = Release|Any CPU
+		{5169DA02-1983-41ED-8A15-CB0D97462043}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5169DA02-1983-41ED-8A15-CB0D97462043}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5169DA02-1983-41ED-8A15-CB0D97462043}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5169DA02-1983-41ED-8A15-CB0D97462043}.Release|Any CPU.Build.0 = Release|Any CPU
+		{5290457E-79F9-4C96-A2F3-849533ADDFA5}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5290457E-79F9-4C96-A2F3-849533ADDFA5}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5290457E-79F9-4C96-A2F3-849533ADDFA5}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5290457E-79F9-4C96-A2F3-849533ADDFA5}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
